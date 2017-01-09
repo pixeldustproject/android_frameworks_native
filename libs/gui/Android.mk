@@ -16,6 +16,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_CLANG := true
+LOCAL_CLANG_LTO := true
 LOCAL_CPPFLAGS := -std=c++1y -Weverything -Werror
 
 # The static constructors and destructors in this library have not been noted to

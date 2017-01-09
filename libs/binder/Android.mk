@@ -49,6 +49,7 @@ LOCAL_MODULE := libbinder
 LOCAL_SHARED_LIBRARIES := liblog libcutils libutils
 
 LOCAL_CLANG := true
+LOCAL_CLANG_LTO := true
 LOCAL_SANITIZE := integer
 LOCAL_SRC_FILES := $(sources)
 ifneq ($(TARGET_USES_64_BIT_BINDER),true)
